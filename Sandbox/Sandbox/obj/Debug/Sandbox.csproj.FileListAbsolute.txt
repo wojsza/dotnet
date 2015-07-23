@@ -4,3 +4,9 @@ X:\Workspace\Sandbox\Sandbox\bin\Debug\Sandbox.pdb
 X:\Workspace\Sandbox\Sandbox\obj\Debug\Sandbox.csprojResolveAssemblyReference.cache
 X:\Workspace\Sandbox\Sandbox\obj\Debug\Sandbox.exe
 X:\Workspace\Sandbox\Sandbox\obj\Debug\Sandbox.pdb
+C:\Users\Wojsza\Source\Repos\sandbox\Sandbox\Sandbox\bin\Debug\Sandbox.exe.config
+C:\Users\Wojsza\Source\Repos\sandbox\Sandbox\Sandbox\obj\Debug\Sandbox.exe
+C:\Users\Wojsza\Source\Repos\sandbox\Sandbox\Sandbox\obj\Debug\Sandbox.pdb
+C:\Users\Wojsza\Source\Repos\sandbox\Sandbox\Sandbox\bin\Debug\Sandbox.exe
+C:\Users\Wojsza\Source\Repos\sandbox\Sandbox\Sandbox\bin\Debug\Sandbox.pdb
+C:\Users\Wojsza\Source\Repos\sandbox\Sandbox\Sandbox\obj\Debug\Sandbox.csprojResolveAssemblyReference.cache

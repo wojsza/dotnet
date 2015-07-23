@@ -17,7 +17,11 @@ namespace Sandbox
 
             Encrypt Encrypt = new Encrypt();
             string encryptValue = Encrypt.EncryptText(toEncode, true);
-            Console.Write(String.Format("Txt zaszyfrowany: {0}", encryptValue));
+            Console.Write(String.Format("Txt zaszyfrowany: {0} \n", encryptValue));
+
+            Decrypt Decrypt = new Decrypt();
+            string decryptValue = Decrypt.DecryptText(encryptValue, true);
+            Console.Write(String.Format("Txt odszyfrowany: {0} \n", decryptValue));
 
             Console.Read();
         }

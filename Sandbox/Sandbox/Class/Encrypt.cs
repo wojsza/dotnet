@@ -8,7 +8,6 @@ namespace Sandbox.Class
 {
     class Encrypt
     {
-
         public string EncryptText(string toEncrypt, bool useHashing)
         {
             byte[] keyArray;
