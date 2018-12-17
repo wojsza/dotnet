@@ -1,0 +1,7 @@
+C:\Workspace\Voestalpine\trunk\ConfigurationTool\ConfigurationTool.AppReporter.ComCommunication\bin\Debug\netstandard2.0\communication.yaml
+C:\Workspace\Voestalpine\trunk\ConfigurationTool\ConfigurationTool.AppReporter.ComCommunication\bin\Debug\netstandard2.0\ConfigurationTool.AppReporter.ComCommunication.deps.json
+C:\Workspace\Voestalpine\trunk\ConfigurationTool\ConfigurationTool.AppReporter.ComCommunication\bin\Debug\netstandard2.0\ConfigurationTool.AppReporter.ComCommunication.dll
+C:\Workspace\Voestalpine\trunk\ConfigurationTool\ConfigurationTool.AppReporter.ComCommunication\bin\Debug\netstandard2.0\ConfigurationTool.AppReporter.ComCommunication.pdb
+C:\Workspace\Voestalpine\trunk\ConfigurationTool\ConfigurationTool.AppReporter.ComCommunication\obj\Debug\netstandard2.0\ConfigurationTool.AppReporter.ComCommunication.fsprojResolveAssemblyReference.cache
+C:\Workspace\Voestalpine\trunk\ConfigurationTool\ConfigurationTool.AppReporter.ComCommunication\obj\Debug\netstandard2.0\ConfigurationTool.AppReporter.ComCommunication.dll
+C:\Workspace\Voestalpine\trunk\ConfigurationTool\ConfigurationTool.AppReporter.ComCommunication\obj\Debug\netstandard2.0\ConfigurationTool.AppReporter.ComCommunication.pdb

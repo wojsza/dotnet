@@ -1,0 +1,908 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETStandard,Version=v2.0": {
+      "FSharp.Configuration/1.5.0": {
+        "type": "package",
+        "dependencies": {
+          "FSharp.Core": "4.0.0.1"
+        },
+        "compile": {
+          "lib/net45/FSharp.Configuration.dll": {},
+          "lib/net45/SharpYaml.dll": {}
+        },
+        "runtime": {
+          "lib/net45/FSharp.Configuration.dll": {},
+          "lib/net45/SharpYaml.dll": {}
+        }
+      },
+      "FSharp.Core/4.3.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.6/FSharp.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/FSharp.Core.dll": {}
+        },
+        "resource": {
+          "lib/netstandard1.6/cs/FSharp.Core.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard1.6/de/FSharp.Core.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard1.6/en/FSharp.Core.resources.dll": {
+            "locale": "en"
+          },
+          "lib/netstandard1.6/es/FSharp.Core.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard1.6/fr/FSharp.Core.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard1.6/it/FSharp.Core.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard1.6/ja/FSharp.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard1.6/ko/FSharp.Core.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard1.6/pl/FSharp.Core.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard1.6/pt-BR/FSharp.Core.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard1.6/ru/FSharp.Core.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard1.6/tr/FSharp.Core.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard1.6/zh-Hans/FSharp.Core.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard1.6/zh-Hant/FSharp.Core.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.Win32.Registry/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Memory": "4.5.0",
+          "System.Security.AccessControl": "4.5.0",
+          "System.Security.Principal.Windows": "4.5.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Win32.Registry.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "NETStandard.Library/2.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        },
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "build": {
+          "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "NLog/4.5.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/NLog.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {}
+        }
+      },
+      "NLog.FSharp/4.5.3": {
+        "type": "package",
+        "dependencies": {
+          "NLog": "4.5.3"
+        },
+        "compile": {
+          "lib/net40/NLog.FSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net40/NLog.FSharp.dll": {}
+        }
+      },
+      "System.Buffers/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Buffers.dll": {}
+        }
+      },
+      "System.IO.Ports/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.Registry": "4.5.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.IO.Ports.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.IO.Ports.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netstandard2.0/System.IO.Ports.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Memory/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Numerics.Vectors": "4.4.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Security.AccessControl/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Principal.Windows": "4.5.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Security.AccessControl.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netstandard1.3/System.Security.AccessControl.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Security.Principal.Windows/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Security.Principal.Windows.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netstandard1.3/System.Security.Principal.Windows.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FSharp.Configuration/1.5.0": {
+      "sha512": "wt8QJDmOvFb6BzQjBm7Z8Uvl4DFxqUs0LNcuH9R0ksxUIofbllfFxgPu/ORn0xuhfmLditTaCstxLeJHz4YzMg==",
+      "type": "package",
+      "path": "fsharp.configuration/1.5.0",
+      "files": [
+        ".signature.p7s",
+        "docs/AppSettingsProvider.html",
+        "docs/IniTypeProvider.html",
+        "docs/ResXProvider.html",
+        "docs/YamlConfigProvider.html",
+        "docs/content/img/github-blue.png",
+        "docs/content/img/github.png",
+        "docs/content/style.css",
+        "docs/content/style.css.bak",
+        "docs/content/style_light.css",
+        "docs/content/tips.js",
+        "docs/img/AppSettingsProvider.png",
+        "docs/img/ResXImages.png",
+        "docs/img/ResXProvider.png",
+        "docs/img/Resource1.png",
+        "docs/img/YamlConfigProvider.png",
+        "docs/img/logo.pdn",
+        "docs/img/logo.png",
+        "docs/index.html",
+        "docs/license.html",
+        "docs/reference/fsharp-configuration-appsettings.html",
+        "docs/reference/fsharp-configuration-appsettingstypeprovider.html",
+        "docs/reference/fsharp-configuration-configtypeprovider-fsharpconfigurationprovider.html",
+        "docs/reference/fsharp-configuration-configtypeprovider.html",
+        "docs/reference/fsharp-configuration-inifile.html",
+        "docs/reference/fsharp-configuration-inifileprovider-parser-key.html",
+        "docs/reference/fsharp-configuration-inifileprovider-parser-section.html",
+        "docs/reference/fsharp-configuration-inifileprovider-parser-sectionname.html",
+        "docs/reference/fsharp-configuration-inifileprovider-parser-setting.html",
+        "docs/reference/fsharp-configuration-inifileprovider-parser-stream.html",
+        "docs/reference/fsharp-configuration-inifileprovider-parser-value.html",
+        "docs/reference/fsharp-configuration-inifileprovider-parser.html",
+        "docs/reference/fsharp-configuration-inifileprovider.html",
+        "docs/reference/fsharp-configuration-resxprovider-0.html",
+        "docs/reference/fsharp-configuration-yamlconfig.html",
+        "docs/reference/fsharp-configuration-yamlconfigtypeprovider-helper.html",
+        "docs/reference/fsharp-configuration-yamlconfigtypeprovider-root.html",
+        "docs/reference/fsharp-configuration-yamlconfigtypeprovider.html",
+        "docs/reference/index.html",
+        "docs/reference/providerimplementation-providedtypes-providedassembly.html",
+        "docs/reference/providerimplementation-providedtypes-providedconstructor.html",
+        "docs/reference/providerimplementation-providedtypes-providedevent.html",
+        "docs/reference/providerimplementation-providedtypes-providedfield.html",
+        "docs/reference/providerimplementation-providedtypes-providedmeasurebuilder.html",
+        "docs/reference/providerimplementation-providedtypes-providedmethod.html",
+        "docs/reference/providerimplementation-providedtypes-providedparameter.html",
+        "docs/reference/providerimplementation-providedtypes-providedproperty.html",
+        "docs/reference/providerimplementation-providedtypes-providedstaticparameter.html",
+        "docs/reference/providerimplementation-providedtypes-providedtypebuilder.html",
+        "docs/reference/providerimplementation-providedtypes-providedtypedefinition.html",
+        "docs/reference/providerimplementation-providedtypes-providedtypescontext.html",
+        "docs/reference/providerimplementation-providedtypes-providedtypesymbol.html",
+        "docs/reference/providerimplementation-providedtypes-typeproviderfornamespaces.html",
+        "docs/reference/providerimplementation-providedtypestesting-utils.html",
+        "docs/release-notes.html",
+        "fsharp.configuration.1.5.0.nupkg.sha512",
+        "fsharp.configuration.nuspec",
+        "lib/net45/FSharp.Configuration.XML",
+        "lib/net45/FSharp.Configuration.dll",
+        "lib/net45/FSharp.Configuration.dll.mdb",
+        "lib/net45/SharpYaml.dll"
+      ]
+    },
+    "FSharp.Core/4.3.4": {
+      "sha512": "u2UeaUl1pt/Lktdpzq3AsaRmOV1mOiQaSbZgYqQQYuqBSjnILWemetff4xMZIAZi0241jlIkcrJQsU5PlLwIJA==",
+      "type": "package",
+      "path": "fsharp.core/4.3.4",
+      "files": [
+        "fsharp.core.4.3.4.nupkg.sha512",
+        "fsharp.core.nuspec",
+        "lib/net45/FSharp.Core.dll",
+        "lib/net45/FSharp.Core.optdata",
+        "lib/net45/FSharp.Core.sigdata",
+        "lib/net45/FSharp.Core.xml",
+        "lib/net45/UnitTests/MockTypeProviders/cs/FSharp.Core.resources.dll",
+        "lib/net45/UnitTests/MockTypeProviders/de/FSharp.Core.resources.dll",
+        "lib/net45/UnitTests/MockTypeProviders/en/FSharp.Core.resources.dll",
+        "lib/net45/UnitTests/MockTypeProviders/es/FSharp.Core.resources.dll",
+        "lib/net45/UnitTests/MockTypeProviders/fr/FSharp.Core.resources.dll",
+        "lib/net45/UnitTests/MockTypeProviders/it/FSharp.Core.resources.dll",
+        "lib/net45/UnitTests/MockTypeProviders/ja/FSharp.Core.resources.dll",
+        "lib/net45/UnitTests/MockTypeProviders/ko/FSharp.Core.resources.dll",
+        "lib/net45/UnitTests/MockTypeProviders/pl/FSharp.Core.resources.dll",
+        "lib/net45/UnitTests/MockTypeProviders/pt-BR/FSharp.Core.resources.dll",
+        "lib/net45/UnitTests/MockTypeProviders/ru/FSharp.Core.resources.dll",
+        "lib/net45/UnitTests/MockTypeProviders/tr/FSharp.Core.resources.dll",
+        "lib/net45/UnitTests/MockTypeProviders/zh-Hans/FSharp.Core.resources.dll",
+        "lib/net45/UnitTests/MockTypeProviders/zh-Hant/FSharp.Core.resources.dll",
+        "lib/net45/cs/FSharp.Core.resources.dll",
+        "lib/net45/de/FSharp.Core.resources.dll",
+        "lib/net45/en/FSharp.Core.resources.dll",
+        "lib/net45/es/FSharp.Core.resources.dll",
+        "lib/net45/fr/FSharp.Core.resources.dll",
+        "lib/net45/it/FSharp.Core.resources.dll",
+        "lib/net45/ja/FSharp.Core.resources.dll",
+        "lib/net45/ko/FSharp.Core.resources.dll",
+        "lib/net45/pl/FSharp.Core.resources.dll",
+        "lib/net45/pt-BR/FSharp.Core.resources.dll",
+        "lib/net45/ru/FSharp.Core.resources.dll",
+        "lib/net45/tr/FSharp.Core.resources.dll",
+        "lib/net45/zh-Hans/FSharp.Core.resources.dll",
+        "lib/net45/zh-Hant/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/FSharp.Core.dll",
+        "lib/netstandard1.6/FSharp.Core.optdata",
+        "lib/netstandard1.6/FSharp.Core.sigdata",
+        "lib/netstandard1.6/FSharp.Core.xml",
+        "lib/netstandard1.6/cs/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/de/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/en/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/es/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/fr/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/it/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/ja/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/ko/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/pl/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/pt-BR/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/ru/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/tr/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/zh-Hans/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/zh-Hant/FSharp.Core.resources.dll"
+      ]
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "type": "package",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "files": [
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/netstandard1.0/_._",
+        "microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+        "microsoft.netcore.platforms.nuspec",
+        "runtime.json"
+      ]
+    },
+    "Microsoft.Win32.Registry/4.5.0": {
+      "sha512": "nt8HW2YtCF3xGObHXtCAn5tzuZpjy5YMPftzyrjF6Ek5RyLUFU4cSw4yGWV2+dyftDXjDpytdLPrgSttC9ZePA==",
+      "type": "package",
+      "path": "microsoft.win32.registry/4.5.0",
+      "files": [
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net46/Microsoft.Win32.Registry.dll",
+        "lib/net461/Microsoft.Win32.Registry.dll",
+        "lib/netstandard1.3/Microsoft.Win32.Registry.dll",
+        "lib/netstandard2.0/Microsoft.Win32.Registry.dll",
+        "microsoft.win32.registry.4.5.0.nupkg.sha512",
+        "microsoft.win32.registry.nuspec",
+        "ref/net46/Microsoft.Win32.Registry.dll",
+        "ref/net461/Microsoft.Win32.Registry.dll",
+        "ref/net461/Microsoft.Win32.Registry.xml",
+        "ref/netstandard1.3/Microsoft.Win32.Registry.dll",
+        "ref/netstandard1.3/Microsoft.Win32.Registry.xml",
+        "ref/netstandard1.3/de/Microsoft.Win32.Registry.xml",
+        "ref/netstandard1.3/es/Microsoft.Win32.Registry.xml",
+        "ref/netstandard1.3/fr/Microsoft.Win32.Registry.xml",
+        "ref/netstandard1.3/it/Microsoft.Win32.Registry.xml",
+        "ref/netstandard1.3/ja/Microsoft.Win32.Registry.xml",
+        "ref/netstandard1.3/ko/Microsoft.Win32.Registry.xml",
+        "ref/netstandard1.3/ru/Microsoft.Win32.Registry.xml",
+        "ref/netstandard1.3/zh-hans/Microsoft.Win32.Registry.xml",
+        "ref/netstandard1.3/zh-hant/Microsoft.Win32.Registry.xml",
+        "ref/netstandard2.0/Microsoft.Win32.Registry.dll",
+        "ref/netstandard2.0/Microsoft.Win32.Registry.xml",
+        "runtimes/unix/lib/netstandard2.0/Microsoft.Win32.Registry.dll",
+        "runtimes/win/lib/net46/Microsoft.Win32.Registry.dll",
+        "runtimes/win/lib/net461/Microsoft.Win32.Registry.dll",
+        "runtimes/win/lib/netstandard1.3/Microsoft.Win32.Registry.dll",
+        "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "NETStandard.Library/2.0.1": {
+      "sha512": "oA6nwv9MhEKYvLpjZ0ggSpb1g4CQViDVQjLUcDWg598jtvJbpfeP2reqwI1GLW2TbxC/Ml7xL6BBR1HmKPXlTg==",
+      "type": "package",
+      "path": "netstandard.library/2.0.1",
+      "files": [
+        "LICENSE.TXT",
+        "NETStandard.Library.2.0.1.nupkg.sha512",
+        "NETStandard.Library.nuspec",
+        "THIRD-PARTY-NOTICES.TXT",
+        "build/NETStandard.Library.targets",
+        "build/netstandard2.0/NETStandard.Library.targets",
+        "build/netstandard2.0/ref/Microsoft.Win32.Primitives.dll",
+        "build/netstandard2.0/ref/System.AppContext.dll",
+        "build/netstandard2.0/ref/System.Collections.Concurrent.dll",
+        "build/netstandard2.0/ref/System.Collections.NonGeneric.dll",
+        "build/netstandard2.0/ref/System.Collections.Specialized.dll",
+        "build/netstandard2.0/ref/System.Collections.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.Composition.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.EventBasedAsync.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.Primitives.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.TypeConverter.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.dll",
+        "build/netstandard2.0/ref/System.Console.dll",
+        "build/netstandard2.0/ref/System.Core.dll",
+        "build/netstandard2.0/ref/System.Data.Common.dll",
+        "build/netstandard2.0/ref/System.Data.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Contracts.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Debug.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.FileVersionInfo.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Process.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.StackTrace.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.TextWriterTraceListener.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Tools.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.TraceSource.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Tracing.dll",
+        "build/netstandard2.0/ref/System.Drawing.Primitives.dll",
+        "build/netstandard2.0/ref/System.Drawing.dll",
+        "build/netstandard2.0/ref/System.Dynamic.Runtime.dll",
+        "build/netstandard2.0/ref/System.Globalization.Calendars.dll",
+        "build/netstandard2.0/ref/System.Globalization.Extensions.dll",
+        "build/netstandard2.0/ref/System.Globalization.dll",
+        "build/netstandard2.0/ref/System.IO.Compression.FileSystem.dll",
+        "build/netstandard2.0/ref/System.IO.Compression.ZipFile.dll",
+        "build/netstandard2.0/ref/System.IO.Compression.dll",
+        "build/netstandard2.0/ref/System.IO.FileSystem.DriveInfo.dll",
+        "build/netstandard2.0/ref/System.IO.FileSystem.Primitives.dll",
+        "build/netstandard2.0/ref/System.IO.FileSystem.Watcher.dll",
+        "build/netstandard2.0/ref/System.IO.FileSystem.dll",
+        "build/netstandard2.0/ref/System.IO.IsolatedStorage.dll",
+        "build/netstandard2.0/ref/System.IO.MemoryMappedFiles.dll",
+        "build/netstandard2.0/ref/System.IO.Pipes.dll",
+        "build/netstandard2.0/ref/System.IO.UnmanagedMemoryStream.dll",
+        "build/netstandard2.0/ref/System.IO.dll",
+        "build/netstandard2.0/ref/System.Linq.Expressions.dll",
+        "build/netstandard2.0/ref/System.Linq.Parallel.dll",
+        "build/netstandard2.0/ref/System.Linq.Queryable.dll",
+        "build/netstandard2.0/ref/System.Linq.dll",
+        "build/netstandard2.0/ref/System.Net.Http.dll",
+        "build/netstandard2.0/ref/System.Net.NameResolution.dll",
+        "build/netstandard2.0/ref/System.Net.NetworkInformation.dll",
+        "build/netstandard2.0/ref/System.Net.Ping.dll",
+        "build/netstandard2.0/ref/System.Net.Primitives.dll",
+        "build/netstandard2.0/ref/System.Net.Requests.dll",
+        "build/netstandard2.0/ref/System.Net.Security.dll",
+        "build/netstandard2.0/ref/System.Net.Sockets.dll",
+        "build/netstandard2.0/ref/System.Net.WebHeaderCollection.dll",
+        "build/netstandard2.0/ref/System.Net.WebSockets.Client.dll",
+        "build/netstandard2.0/ref/System.Net.WebSockets.dll",
+        "build/netstandard2.0/ref/System.Net.dll",
+        "build/netstandard2.0/ref/System.Numerics.dll",
+        "build/netstandard2.0/ref/System.ObjectModel.dll",
+        "build/netstandard2.0/ref/System.Reflection.Extensions.dll",
+        "build/netstandard2.0/ref/System.Reflection.Primitives.dll",
+        "build/netstandard2.0/ref/System.Reflection.dll",
+        "build/netstandard2.0/ref/System.Resources.Reader.dll",
+        "build/netstandard2.0/ref/System.Resources.ResourceManager.dll",
+        "build/netstandard2.0/ref/System.Resources.Writer.dll",
+        "build/netstandard2.0/ref/System.Runtime.CompilerServices.VisualC.dll",
+        "build/netstandard2.0/ref/System.Runtime.Extensions.dll",
+        "build/netstandard2.0/ref/System.Runtime.Handles.dll",
+        "build/netstandard2.0/ref/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "build/netstandard2.0/ref/System.Runtime.InteropServices.dll",
+        "build/netstandard2.0/ref/System.Runtime.Numerics.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.Formatters.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.Json.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.Primitives.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.Xml.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.dll",
+        "build/netstandard2.0/ref/System.Runtime.dll",
+        "build/netstandard2.0/ref/System.Security.Claims.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.Algorithms.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.Csp.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.Encoding.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.Primitives.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.X509Certificates.dll",
+        "build/netstandard2.0/ref/System.Security.Principal.dll",
+        "build/netstandard2.0/ref/System.Security.SecureString.dll",
+        "build/netstandard2.0/ref/System.ServiceModel.Web.dll",
+        "build/netstandard2.0/ref/System.Text.Encoding.Extensions.dll",
+        "build/netstandard2.0/ref/System.Text.Encoding.dll",
+        "build/netstandard2.0/ref/System.Text.RegularExpressions.dll",
+        "build/netstandard2.0/ref/System.Threading.Overlapped.dll",
+        "build/netstandard2.0/ref/System.Threading.Tasks.Parallel.dll",
+        "build/netstandard2.0/ref/System.Threading.Tasks.dll",
+        "build/netstandard2.0/ref/System.Threading.Thread.dll",
+        "build/netstandard2.0/ref/System.Threading.ThreadPool.dll",
+        "build/netstandard2.0/ref/System.Threading.Timer.dll",
+        "build/netstandard2.0/ref/System.Threading.dll",
+        "build/netstandard2.0/ref/System.Transactions.dll",
+        "build/netstandard2.0/ref/System.ValueTuple.dll",
+        "build/netstandard2.0/ref/System.Web.dll",
+        "build/netstandard2.0/ref/System.Windows.dll",
+        "build/netstandard2.0/ref/System.Xml.Linq.dll",
+        "build/netstandard2.0/ref/System.Xml.ReaderWriter.dll",
+        "build/netstandard2.0/ref/System.Xml.Serialization.dll",
+        "build/netstandard2.0/ref/System.Xml.XDocument.dll",
+        "build/netstandard2.0/ref/System.Xml.XPath.XDocument.dll",
+        "build/netstandard2.0/ref/System.Xml.XPath.dll",
+        "build/netstandard2.0/ref/System.Xml.XmlDocument.dll",
+        "build/netstandard2.0/ref/System.Xml.XmlSerializer.dll",
+        "build/netstandard2.0/ref/System.Xml.dll",
+        "build/netstandard2.0/ref/System.dll",
+        "build/netstandard2.0/ref/mscorlib.dll",
+        "build/netstandard2.0/ref/netstandard.dll",
+        "build/netstandard2.0/ref/netstandard.xml",
+        "lib/netstandard1.0/_._"
+      ]
+    },
+    "NLog/4.5.3": {
+      "sha512": "qOfs/q60kd8Wxnp/gj/YpPZu3psWuGe+yvXVSBhLWo/639SCyPTaayfcugwr1SCKubaRiEWthvdjHF1T1VLRDQ==",
+      "type": "package",
+      "path": "nlog/4.5.3",
+      "files": [
+        ".signature.p7s",
+        "lib/monoandroid44/NLog.dll",
+        "lib/monoandroid44/NLog.xml",
+        "lib/net35/NLog.dll",
+        "lib/net35/NLog.xml",
+        "lib/net40-client/NLog.dll",
+        "lib/net40-client/NLog.xml",
+        "lib/net45/NLog.dll",
+        "lib/net45/NLog.xml",
+        "lib/netstandard1.3/NLog.dll",
+        "lib/netstandard1.3/NLog.xml",
+        "lib/netstandard1.5/NLog.dll",
+        "lib/netstandard1.5/NLog.xml",
+        "lib/netstandard2.0/NLog.dll",
+        "lib/netstandard2.0/NLog.xml",
+        "lib/sl4/NLog.dll",
+        "lib/sl4/NLog.xml",
+        "lib/sl5/NLog.dll",
+        "lib/sl5/NLog.xml",
+        "lib/wp8/NLog.dll",
+        "lib/wp8/NLog.xml",
+        "lib/xamarinios10/NLog.dll",
+        "lib/xamarinios10/NLog.xml",
+        "nlog.4.5.3.nupkg.sha512",
+        "nlog.nuspec"
+      ]
+    },
+    "NLog.FSharp/4.5.3": {
+      "sha512": "Ekhdl7ZBfwQ4PA0lViLuhDLVfAt+wEKGjkFgjKJRR0a7z2N+/w8XOBaSGHfjh8pTGgTp18s27Tdw+Wl1Q9o2bQ==",
+      "type": "package",
+      "path": "nlog.fsharp/4.5.3",
+      "files": [
+        "lib/net40/NLog.FSharp.dll",
+        "nlog.fsharp.4.5.3.nupkg.sha512",
+        "nlog.fsharp.nuspec"
+      ]
+    },
+    "System.Buffers/4.4.0": {
+      "sha512": "VCJfpWcYG1gT3WwivZWgT0KaqY678MQBvrOI2si6V8GHeQOtuW+wpiv5ss4KyfGG+cFFdPNaI+nw2/kExCtGgQ==",
+      "type": "package",
+      "path": "system.buffers/4.4.0",
+      "files": [
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.1/System.Buffers.dll",
+        "lib/netstandard1.1/System.Buffers.xml",
+        "lib/netstandard2.0/System.Buffers.dll",
+        "lib/netstandard2.0/System.Buffers.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.1/System.Buffers.dll",
+        "ref/netstandard1.1/System.Buffers.xml",
+        "ref/netstandard2.0/System.Buffers.dll",
+        "ref/netstandard2.0/System.Buffers.xml",
+        "system.buffers.4.4.0.nupkg.sha512",
+        "system.buffers.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.IO.Ports/4.5.0": {
+      "sha512": "vcFROzHOHFR7+TUCKd5xdoMhzjx49bw/5+poOFrhWxpwLYi9lDVzUDLJSgVzTndxoX0E7T7/OIxlXkYcj0M7Dg==",
+      "type": "package",
+      "path": "system.io.ports/4.5.0",
+      "files": [
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.IO.Ports.dll",
+        "lib/netstandard2.0/System.IO.Ports.dll",
+        "lib/uap10.0.16299/_._",
+        "ref/net461/System.IO.Ports.dll",
+        "ref/net461/System.IO.Ports.xml",
+        "ref/netstandard2.0/System.IO.Ports.dll",
+        "ref/netstandard2.0/System.IO.Ports.xml",
+        "ref/uap10.0.16299/_._",
+        "runtimes/win/lib/netstandard2.0/System.IO.Ports.dll",
+        "runtimes/win/lib/uap10.0.16299/_._",
+        "system.io.ports.4.5.0.nupkg.sha512",
+        "system.io.ports.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Memory/4.5.0": {
+      "sha512": "P56/L4B9vhz0YFTC4qIXFgx+VgMhg3JhCm5/EASihTotyjwmBt2QEAQdmd2tNctYET/w0CRJzVH1cwxgbKGnDQ==",
+      "type": "package",
+      "path": "system.memory/4.5.0",
+      "files": [
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "lib/uap10.0.16300/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/netcoreapp2.1/_._",
+        "ref/netstandard1.1/System.Memory.dll",
+        "ref/netstandard1.1/System.Memory.xml",
+        "ref/netstandard2.0/System.Memory.dll",
+        "ref/netstandard2.0/System.Memory.xml",
+        "ref/uap10.0.16300/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.memory.4.5.0.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Numerics.Vectors/4.4.0": {
+      "sha512": "ZhdgJiihSOGD325jClouHy8WSPtwFSj6K1OymoEyN0Wc9Y6X2OVxn65VKfTWHQOYM+QljlVSreporVNvZm8rEA==",
+      "type": "package",
+      "path": "system.numerics.vectors/4.4.0",
+      "files": [
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Numerics.Vectors.dll",
+        "lib/net46/System.Numerics.Vectors.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.Numerics.Vectors.dll",
+        "lib/netstandard1.0/System.Numerics.Vectors.xml",
+        "lib/netstandard2.0/System.Numerics.Vectors.dll",
+        "lib/netstandard2.0/System.Numerics.Vectors.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Numerics.Vectors.dll",
+        "ref/net46/System.Numerics.Vectors.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/System.Numerics.Vectors.dll",
+        "ref/netstandard1.0/System.Numerics.Vectors.xml",
+        "ref/netstandard2.0/System.Numerics.Vectors.dll",
+        "ref/netstandard2.0/System.Numerics.Vectors.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.numerics.vectors.4.4.0.nupkg.sha512",
+        "system.numerics.vectors.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.0": {
+      "sha512": "6zBxkHYemB0kQiHP3vGXGRXejZVoNVuMn2paUuqKKi5Wyjkxfkp+D0rd0c3VrGwotidRINt6KpOi2smL4VkJKw==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/4.5.0",
+      "files": [
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/uap10.0.16300/_._",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/uap10.0.16300/_._",
+        "system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Security.AccessControl/4.5.0": {
+      "sha512": "aVjTe36YkO8FzfNhMLoPEzv3gF9rphoW9ngFhG/MH4zzEPLx07sNrgCLwMP4Wx2leI6qarMrGv21OwQXYUKLmw==",
+      "type": "package",
+      "path": "system.security.accesscontrol/4.5.0",
+      "files": [
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net46/System.Security.AccessControl.dll",
+        "lib/net461/System.Security.AccessControl.dll",
+        "lib/netstandard1.3/System.Security.AccessControl.dll",
+        "lib/netstandard2.0/System.Security.AccessControl.dll",
+        "lib/uap10.0.16299/_._",
+        "ref/net46/System.Security.AccessControl.dll",
+        "ref/net461/System.Security.AccessControl.dll",
+        "ref/net461/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/System.Security.AccessControl.dll",
+        "ref/netstandard1.3/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/de/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/es/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/fr/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/it/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/ja/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/ko/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/ru/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/zh-hans/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/zh-hant/System.Security.AccessControl.xml",
+        "ref/netstandard2.0/System.Security.AccessControl.dll",
+        "ref/netstandard2.0/System.Security.AccessControl.xml",
+        "ref/uap10.0.16299/_._",
+        "runtimes/win/lib/net46/System.Security.AccessControl.dll",
+        "runtimes/win/lib/net461/System.Security.AccessControl.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll",
+        "runtimes/win/lib/netstandard1.3/System.Security.AccessControl.dll",
+        "runtimes/win/lib/uap10.0.16299/_._",
+        "system.security.accesscontrol.4.5.0.nupkg.sha512",
+        "system.security.accesscontrol.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Security.Principal.Windows/4.5.0": {
+      "sha512": "WA9ETb/pY3BjnxKjBUHEgO59B7d/nnmjHFsqjJ2eDT780nD769CT1/bw2ia0Z6W7NqlcqokE6sKGKa6uw88XGA==",
+      "type": "package",
+      "path": "system.security.principal.windows/4.5.0",
+      "files": [
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net46/System.Security.Principal.Windows.dll",
+        "lib/net461/System.Security.Principal.Windows.dll",
+        "lib/netstandard1.3/System.Security.Principal.Windows.dll",
+        "lib/netstandard2.0/System.Security.Principal.Windows.dll",
+        "lib/uap10.0.16299/_._",
+        "ref/net46/System.Security.Principal.Windows.dll",
+        "ref/net461/System.Security.Principal.Windows.dll",
+        "ref/net461/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/System.Security.Principal.Windows.dll",
+        "ref/netstandard1.3/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/de/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/es/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/fr/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/it/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ja/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ko/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ru/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/zh-hans/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/zh-hant/System.Security.Principal.Windows.xml",
+        "ref/netstandard2.0/System.Security.Principal.Windows.dll",
+        "ref/netstandard2.0/System.Security.Principal.Windows.xml",
+        "ref/uap10.0.16299/_._",
+        "runtimes/unix/lib/netcoreapp2.0/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/net46/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/net461/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/netstandard1.3/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/uap10.0.16299/_._",
+        "system.security.principal.windows.4.5.0.nupkg.sha512",
+        "system.security.principal.windows.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETStandard,Version=v2.0": [
+      "FSharp.Configuration >= 1.5.0",
+      "FSharp.Core >= 4.3.*",
+      "NETStandard.Library >= 2.0.1",
+      "NLog.FSharp >= 4.5.3",
+      "System.IO.Ports >= 4.5.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\wszabowicz\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\wszabowicz\\Desktop\\ComCommunication\\ConfigurationTool.AppReporter.ComCommunication.fsproj",
+      "projectName": "ConfigurationTool.AppReporter.ComCommunication",
+      "projectPath": "C:\\Users\\wszabowicz\\Desktop\\ComCommunication\\ConfigurationTool.AppReporter.ComCommunication.fsproj",
+      "packagesPath": "C:\\Users\\wszabowicz\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\wszabowicz\\Desktop\\ComCommunication\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\wszabowicz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+      ],
+      "originalTargetFrameworks": [
+        "netstandard2.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "noWarn": [
+          "NU1701"
+        ]
+      }
+    },
+    "frameworks": {
+      "netstandard2.0": {
+        "dependencies": {
+          "FSharp.Configuration": {
+            "target": "Package",
+            "version": "[1.5.0, )"
+          },
+          "FSharp.Core": {
+            "target": "Package",
+            "version": "[4.3.*, )"
+          },
+          "NETStandard.Library": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[2.0.1, )",
+            "autoReferenced": true
+          },
+          "NLog.FSharp": {
+            "target": "Package",
+            "version": "[4.5.3, )"
+          },
+          "System.IO.Ports": {
+            "target": "Package",
+            "version": "[4.5.0, )"
+          }
+        },
+        "imports": [
+          "net461"
+        ],
+        "assetTargetFallback": true,
+        "warn": true
+      }
+    }
+  }
+}
